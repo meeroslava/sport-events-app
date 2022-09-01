@@ -1,0 +1,37 @@
+<div class="new-event-form">
+
+  <button class="open-button" mat-raised-button color="primary" (click)="openForm()">Add new event</button>
+  <form class='events-form' *ngIf="showForm" [formGroup]="eventForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Sports name</mat-label>
+        <input matInput placeholder="Sports name" formControlName="SportName">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Location</mat-label>
+        <input matInput placeholder="Location" formControlName="Location">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>League</mat-label>
+        <input matInput placeholder="League" formControlName="League">
+      </mat-form-field>
+      
+      <mat-form-field appearance="outline">
+        <mat-label>Teams Playing</mat-label>
+        <input matInput placeholder="Teams Playing" formControlName="TeamsPlaying">
+      </mat-form-field>
+      
+      <mat-form-field appearance="outline">
+        <mat-label>Starting Time</mat-label>
+        <input matInput type="datetime-local" placeholder="Starting Time" formControlName="StartingTime">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Additional Data</mat-label>
+        <textarea matInput placeholder="Additional Data" formControlName="AdditionalData"></textarea>
+      </mat-form-field>
+
+      <button class="submit-button" mat-raised-button color="primary" (click)="submit()">Add</button>
+    </form>
+  </div>

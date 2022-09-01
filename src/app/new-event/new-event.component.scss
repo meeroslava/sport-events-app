@@ -1,0 +1,18 @@
+.events-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.open-button {
+    align-self: flex-end;
+}
+
+.new-event-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.submit-button {
+    width: 75px;
+}
